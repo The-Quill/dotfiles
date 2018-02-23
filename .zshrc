@@ -13,6 +13,9 @@ prompt_music_status(){
   fi
 }
 
+POWERLEVEL9K_CONTEXT_TEMPLATE="%n@`hostname -f`"
+POWERLEVEL9K_ALWAYS_SHOW_USER="true"
+
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=''
@@ -68,9 +71,18 @@ plugins=(
   node,
   colorize,
   osx,
-  battery
+  battery,
+  sublime
 )
 source ~/.fonts/*.sh
 source $ZSH/oh-my-zsh.sh
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
+nvm use 8.9.4 > /dev/null
