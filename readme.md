@@ -5,6 +5,8 @@ Some of my dotfiles:
  - [`.eslintrc.js`](https://github.com/the-quill/dotfiles/blob/master/.eslintrc.js)
  - [`.zshrc`](https://github.com/the-quill/dotfiles/blob/master/.zshrc)
  - [`.vimrc`](https://github.com/the-quill/dotfiles/blob/master/.vimrc)
+ 
+Make sure to install oh-my-zsh when using the `.zshrc`
 
 When using iTerm2, put [`.fonts`](https://github.com/The-Quill/dotfiles/blob/master/.fonts) in your `~` directory, and install the two fonts in [`fonts`](https://github.com/The-Quill/dotfiles/blob/master/fonts)
 
